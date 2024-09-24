@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .roboto {
+            font-family: "Roboto", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="  bg-opacity-90 sticky top-0 z-10 overflow-hidden bg-white  ">
+        <div class=" bg-gray-200 bg-opacity-10 pt-3 pb-6">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <button id="home-btn" class="btn btn-large bg-[#B4F461] text-xl font-semibold">Home</button>
+                </div>
+                <div class="hidden lg:flex navbar-center space-x-3">
+                    <img class="h-[30px]" src="assets/logo.png" alt="">
+                    <h2 class=" text-3xl font-bold">Donate Bangladesh</h2>
+
+                </div>
+                <div class="navbar-end space-x-3">
+
+                    <img class="h-[30px]" src="assets/coin.png" alt="">
+                    <h2 class="font-bold 3xl text-[#575656]">5000</h2><span
+                        class=" font-bold 3xl text-[#575656]">BDT</span>
+
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <main class="container  mx-auto space-y-5">
+        <h1 class="font-black text-2xl uppercase">Important Faq about dom</h1>
+        <div class="space-y-6">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents, specifically HTML
+                        and XML documents. It represents the page so that programs (such as JavaScript) can interact
+                        with and manipulate the structure, style, and content of a webpage.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element form DOM</div>
+                <div class="collapse-content">
+                    <p>
+                        To select an element from the DOM (Document Object Model), you can use various JavaScript
+                        methods that allow you to target elements based on attributes like ID, class, tag name, or other
+                        selectors. Here's a detailed guide on the different ways to select elements:</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is Event delegation in context of the DOM , why is
+                    it useful</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in JavaScript where you take advantage of event bubbling to
+                        handle events at a higher level in the DOM rather than attaching separate event listeners to
+                        individual child elements. Instead of adding an event listener to multiple similar elements, you
+                        add a single event listener to their parent or ancestor and use logic to handle the events for
+                        specific child elements.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>
