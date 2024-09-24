@@ -2,7 +2,7 @@ document.getElementById('donate-btn').addEventListener('click', function (event)
     event.preventDefault();
     const mainBalance = textField('main-balance');
     const donateMoney = inputField('donate-money');
-    if (typeof donateMoney == "number" && isNaN(donateMoney) == false && 0 <= donateMoney && donateMoney <= mainBalance) {
+    if (typeof donateMoney == "number" && isNaN(donateMoney) == false && 0 <= donateMoney && donateMoney <= mainBalance ) {
         const newBalance = mainBalance - donateMoney
         document.getElementById('main-balance').innerText = newBalance;
         return
